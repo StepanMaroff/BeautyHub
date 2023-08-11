@@ -1,0 +1,144 @@
+@media (max-width: 1176px) {
+    h1{
+        font-size: 5vw;
+    }
+
+    .header__photo {
+        width: 55%;
+    }
+}
+
+@media (max-width: 1050px) {
+    header{
+        max-height: none;
+        min-height: 500px;
+        height: auto;
+        padding: 140px 0px 0px 0px;
+        
+    }
+
+    .header__info{
+        transform: translateY(5vw);
+    }
+}
+
+@media (max-width: 768px) {
+    div.nav__links {
+        margin: 0px auto;
+    }
+
+    div.nav__contacts {
+        gap: 40px;
+    }
+
+    div.nav__info {
+        gap: 40px;
+    }
+}
+
+
+@media (max-width:720px) {
+    div.nav__info {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; 
+    }
+
+    div.nav__elements {
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    header p{
+        text-align: center;
+        margin: 0px auto 41px auto;
+    }
+
+    header a{
+        margin: 0px auto 0px auto;
+        display: inline-block;
+    }
+
+    .header__photo {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: 0;
+        opacity: 15%;
+    }
+
+    .header__info {
+        position: relative;
+        z-index: 1;
+        transform: translateY(0px);
+        text-align: center;
+
+    }
+
+    header {
+        min-height: 600px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width:640px) {
+
+    div.nav__contacts {
+        z-index: 5;
+        position: fixed;
+        bottom: 98px;
+        left: 100%;
+        flex-direction: column;
+        transition: 0.5s;
+        width: 100%;
+        
+    }
+
+    h1{
+        font-size: 10vw;
+    }
+
+    div.nav__contacts_active{
+        left: 32px;
+    }
+
+    button.hamburger {
+        display: block;
+        z-index: 5;
+
+    }
+
+    div.nav__info{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    div.nav__links{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #D9D9D9;
+        right: -100%;
+        top: 0px;
+        padding: 100px 32px;
+        flex-direction: column;
+        align-items: start;
+        gap: 24px;
+        z-index: 4;
+        transition: 0.5s;
+    }
+
+    div.nav__links_active{
+        right: 0%;
+    }
+
+    header{
+        padding: 0px;
+    }
+}
